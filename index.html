@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends Pack Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apex Legends Pack Tracker</h1>
+        
+        <!-- Tabs for Pack Tracker and Heirlooms -->
+        <div class="tabs">
+            <button id="packTab" class="tab-btn active" onclick="showPackTracker()">Pack Tracker</button>
+            <button id="heirloomTab" class="tab-btn" onclick="showHeirlooms()">Heirlooms</button>
+        </div>
+
+        <!-- Pack Tracker Section -->
+        <section id="packTracker" class="tracker-section">
+            <div class="tracker">
+                <h2>CR's Pack Tracker</h2>
+                <input type="number" id="cr-base-input" placeholder="Enter base packs" />
+                <input type="number" id="cr-special-input" placeholder="Enter special packs" />
+                <span>Total Base Packs: <span id="cr-base-count">0</span></span>
+                <span>Total Special Packs: <span id="cr-special-count">0</span></span>
+                <span>Total Packs: <span id="cr-total-count">0</span></span>
+            </div>
+
+            <div class="tracker">
+                <h2>Zuza's Pack Tracker</h2>
+                <input type="number" id="zuza-base-input" placeholder="Enter base packs" />
+                <input type="number" id="zuza-special-input" placeholder="Enter special packs" />
+                <span>Total Base Packs: <span id="zuza-base-count">0</span></span>
+                <span>Total Special Packs: <span id="zuza-special-count">0</span></span>
+                <span>Total Packs: <span id="zuza-total-count">0</span></span>
+            </div>
+
+            <div class="tracker">
+                <h2>David's Pack Tracker</h2>
+                <input type="number" id="david-base-input" placeholder="Enter base packs" />
+                <input type="number" id="david-special-input" placeholder="Enter special packs" />
+                <span>Total Base Packs: <span id="david-base-count">0</span></span>
+                <span>Total Special Packs: <span id="david-special-count">0</span></span>
+                <span>Total Packs: <span id="david-total-count">0</span></span>
+            </div>
+        </section>
+
+        <!-- Heirlooms Section -->
+        <section id="heirlooms" class="heirloom-section" style="display: none;">
+            <h2>Base Heirlooms</h2>
+            <div id="base-heirlooms" class="heirloom-list"></div>
+
+            <h3>Recolor Heirlooms</h3>
+            <div id="recolor-heirlooms" class="heirloom-list"></div>
+        </section>
+
+        <!-- Modal for Enlarged Image -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">×</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<div class="tabs">
+    <button class="tab-btn" id="packTrackerTab">Pack Tracker</button>
+    <button class="tab-btn" id="heirloomTab">Heirlooms</button>
+</div>
+
+<!-- Pack Tracker Tab -->
+<div class="tracker-section" id="packTrackerSection">
+    <!-- Tracker for CR, Zuza, and David goes here -->
+</div>
+
+<!-- Heirloom Tab -->
+<div class="heirloom-section" id="heirloomSection">
+    <!-- Heirloom items go here -->
+</div>
